@@ -1,4 +1,6 @@
 <p>roles works!</p>
+
+<!-- iNTERPOLATION -->
 <div class="row">
     <div class="col-3">
         {{firstName}}
@@ -8,6 +10,17 @@
     </div>
 </div>
 
+<!-- dATA BINDING -->
 <div>
-    
+    <input type="text" [value]="firstName"/>
 </div>
+<!-- 
+Two way data binding -->
+
+<div class="row">
+    <input type="text"[(ngModel)]="firstName" />
+</div>
+
+<!-- Event Binding -->
+
+<button class="primary" (click)="greetingMessage()">Click me</button>
