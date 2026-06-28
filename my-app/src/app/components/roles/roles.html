@@ -1,26 +1,19 @@
-<p>roles works!</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                UserName
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of data">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
 
-<!-- iNTERPOLATION -->
-<div class="row">
-    <div class="col-3">
-        {{firstName}}
-    </div>
-    <div class="col-3">
-        {{lastName}}
-    </div>
-</div>
-
-<!-- dATA BINDING -->
-<div>
-    <input type="text" [value]="firstName"/>
-</div>
-<!-- 
-Two way data binding -->
-
-<div class="row">
-    <input type="text"[(ngModel)]="firstName" />
-</div>
-
-<!-- Event Binding -->
-
-<button class="primary" (click)="greetingMessage()">Click me</button>
+    </tbody>
+</table>
