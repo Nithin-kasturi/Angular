@@ -8,6 +8,7 @@ import { User } from '../../models/Interfaces/User';
 @Component({
   selector: 'app-master',
   imports: [Roles,  Designations,CommonModule],
+  standalone:true,
   templateUrl: './master.html',
   styleUrl: './master.css',
 })
