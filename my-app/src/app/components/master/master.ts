@@ -2,8 +2,8 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Roles } from '../roles/roles';
 import { Designations } from "../designations/designations";
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { User } from '../../models/Interfaces/User';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-master',

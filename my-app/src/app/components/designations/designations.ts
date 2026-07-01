@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Designations implements OnInit{
  posts: any[] = [];
+ isLoading:boolean=true;
 service=inject(Services)
 ngOnInit() {
   console.log('ngOnInit');
@@ -21,6 +22,7 @@ getPosts() {
   this.service.getData().subscribe((res: any) => {
     console.log('Before:', this.posts.length);
     this.posts = res;
+    this.isLoading=false;
     console.log('After:', this.posts.length);
   });
 }

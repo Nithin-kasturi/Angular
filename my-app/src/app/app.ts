@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { Master } from './components/master/master';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [Master],
+  imports: [Master,RouterModule,RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

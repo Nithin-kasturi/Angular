@@ -1,19 +1,28 @@
 <div class="row">
+    @if(isLoading==true){
+        <div>Loading</div>
+    }
+    @else {
+
             @for(item of posts;track $index){
 
     <div class="col-3">
         
                 <div class="card">
             <div class="card-body">
-                <h4 class="card-title">BootStrap</h4>
+                <h4 class="card-title">{{item.userId}}</h4>
                 <p class="card-text">
                     A Pre-defined CSS Framework
                 </p>
-                <a href="...Add A link here..." class="card-link">Card link</a>
+                <a href="...Add A link here..." class="card-link">{{item.userId}}</a>
                 <a href="...Add A link here..." class="card-link">Another link</a>
             </div>
             </div>
     </div>
 
             }
-</div>
+    }
+
+    
+        </div>
+
